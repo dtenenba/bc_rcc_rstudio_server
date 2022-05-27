@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-module purge
+# module purge
 
 # load RStudio Server
-module load <%= context.Rserver %>
+# module load <%= context.Rserver %>
 
 # load R
-module load <%= context.Rapp %>
+# module load <%= context.Rapp %>
 
 #
 # Start RStudio Server
@@ -40,7 +40,7 @@ cd "${HOME}"
 #export TMPDIR="$(mktemp -d)"
 
 # Output debug info
-module list
+# module list
 
 # Launch the RStudio Server
 echo "Starting up rserver..."

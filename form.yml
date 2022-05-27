@@ -1,5 +1,5 @@
 ---
-cluster: "carley"
+cluster: "cluster"
 form:
   - Rserver
   - Rapp
