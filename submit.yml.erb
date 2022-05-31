@@ -30,9 +30,9 @@ batch_connect:
   conn_params:
     -  csrf_token
 script:
-  email: <%= ENV["USER"] %>@mcw.edu
+  email: <%= ENV["USER"] %>@fredhutch.org
   queue_name: "<%= queue %>"
-  native:
-    resources:
-      nodes: "1:ppn=<%= ppn %>"
-      mem: "<%= mem %>gb"
+  # native:
+  #   resources:
+  #     nodes: "1:ppn=<%= ppn %>"
+  #     mem: "<%= mem %>gb"
