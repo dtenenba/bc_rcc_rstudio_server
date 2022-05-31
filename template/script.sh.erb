@@ -55,6 +55,7 @@ cd "${HOME}"
 module list
 
 export PATH=$PATH:/usr/lib/rstudio-server/bin
+echo $PATH
 
 # Launch the RStudio Server
 echo "Starting up rserver..."
@@ -67,4 +68,5 @@ rserver \
   --rsession-path "${RSESSION_WRAPPER_FILE}" \
   --server-data-dir "${TMPDIR}" \
   --secure-cookie-key-file "${TMPDIR}/rstudio-server/secure-cookie-key" \
-  --database-config-file "${DBCONF}"
+  --database-config-file "${DBCONF}" \
+  --server-user "${USER}" 
